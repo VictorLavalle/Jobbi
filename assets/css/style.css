@@ -163,24 +163,9 @@ section {
   color: var(--color-secondary);
 }
 
-.navbar .getstarted,
-.navbar .getstarted:focus {
-  background: var(--color-primary);
-  padding: 8px 20px;
-  margin-left: 30px;
-  border-radius: 4px;
-  color: #fff;
-}
-
-.navbar .getstarted:hover,
-.navbar .getstarted:focus:hover {
-  color: #fff;
-  background: var(--color-secondary);
-}
-
 /** MOBILE NAVIGATION*/
 .mobile-nav-toggle {
-  color: #012970;
+  color: var(--color-blue);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -246,20 +231,13 @@ section {
   color: var(--color-secondary);
 }
 
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
-  margin: 15px;
-  width: fit-content;
-  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
-}
-
 /*--------------------------------------------------------------
 
 # DARK MODE TOGGLE
 
 --------------------------------------------------------------*/
 .switch {
-  background: #afb0b48a;
+  background: #e4e4e48a;
   border-radius: 1000px;
   border: none;
   position: relative;
@@ -333,7 +311,7 @@ section {
 .cover .btn-get-started {
   margin-top: 30px;
   line-height: 0;
-  padding: 15px 40px;
+  padding: 15px 20px;
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
@@ -349,7 +327,7 @@ section {
 }
 
 .cover .btn-get-started i {
-  margin-left: 5px;
+  margin-left: 10px;
   font-size: 18px;
   transition: 0.3s;
 }
@@ -358,7 +336,7 @@ section {
   background: var(--color-secondary);
 }
 .cover .btn-get-started:hover i {
-  transform: translateX(5px);
+  transform: translateY(5px);
 }
 
 .cover .cover-img {
