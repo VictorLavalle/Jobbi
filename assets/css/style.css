@@ -83,12 +83,6 @@ section {
   padding: 20px 0;
 }
 
-.header.header-scrolled {
-  background: #fff;
-  padding: 15px 0;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-}
-
 .header .logo {
   line-height: 0;
 }
@@ -107,9 +101,30 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: var(--color-default);
+  color: var(--color-white);
   font-family: var(--font-secondary);
   margin-top: 3px;
+}
+.header.header-scrolled {
+  background: var(--color-white);
+  padding: 15px 0;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.header.header-scrolled .logo span {
+  color: var(--color-default);
+}
+
+.header.header-scrolled .navbar a,
+.header.header-scrolled .navbar a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header.header-scrolled .navbar a:hover,
+.header.header-scrolled .navbar .active,
+.header.header-scrolled .navbar .active:focus,
+.header.header-scrolled .navbar li:hover > a {
+  color: var(--color-secondary);
 }
 
 /*--------------------------------------------------------------
@@ -144,7 +159,7 @@ section {
   font-family: var(--font-secondary);
   font-size: 16px;
   font-weight: 700;
-  color: var(--color-default);
+  color: rgba(255, 255, 255, 0.6);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -160,12 +175,12 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: var(--color-secondary);
+  color: var(--color-white);
 }
 
 /** MOBILE NAVIGATION*/
 .mobile-nav-toggle {
-  color: var(--color-blue);
+  color: var(--color-white);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -254,7 +269,7 @@ section {
   width: 30px;
   height: 30px;
   position: absolute;
-  background: #f1f1f1;
+  background: var(--color-white);
   top: 0;
   left: 0;
   right: 0;
@@ -273,8 +288,8 @@ section {
   left: unset;
 }
 
-.switch.active::after .theme span{
-    color: var(--color-white);
+.switch.active::after .theme span {
+  color: var(--color-white);
 }
 
 .theme span {
@@ -289,21 +304,46 @@ section {
   # COVER SECTION
   --------------------------------------------------------------*/
 .cover {
+  background: linear-gradient(
+      to right,
+      rgba(39, 70, 133, 0.8) 0%,
+      rgba(61, 179, 197, 0.8) 100%
+    ),
+    url(../img/hero-bg.jpg);
+  position: relative;
+}
+
+.cover .wave {
   width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  bottom: -150px;
+}
+
+.cover .wave svg {
+  width: 100%;
+}
+
+.cover,
+.cover > .container > .row {
   height: 100vh;
-  background: url(../img/main/cover-bg.png) top center no-repeat;
-  background-size: cover;
+  min-height: 880px;
+}
+
+.cover .cover-title {
+  margin-bottom: 3rem;
 }
 
 .cover h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 3.5rem;
   font-weight: 700;
-  color: var(--color-default);
+  color: var(--color-white);
 }
 
 .cover h2 {
-  color: var(--color-default);
+  color: var(--color-white);
   margin: 15px 0 0 0;
   font-size: 26px;
 }
@@ -341,6 +381,7 @@ section {
 
 .cover .cover-img {
   text-align: right;
+  margin-top: 4rem;
 }
 
 .cover .animated {
@@ -370,6 +411,75 @@ section {
   100% {
     transform: translateY(-10px);
   }
+}
+
+/*------------------------------------------
+
+        ABOUT JOBBI
+
+  --------------------------------------------*/
+.about .section-heading {
+  font-size: 3rem;
+  font-weight: bolder;
+  background: linear-gradient(-45deg, var(--color-primary), var(--color-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .features .wrap-icon {
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .features .wrap-icon.icon-i {
+  background: linear-gradient(-45deg,var(--color-primary), var(--color-secondary));
+}
+
+.about .features .wrap-icon i {
+  font-size: 40px;
+  line-height: 0;
+  color: #fff;
+}
+
+.about .features h3 {
+  font-size: 20px;
+}
+
+.about .features p {
+  color: #b1b1b1;
+}
+
+/*------------------------------------------
+
+       SECTIONS OF STEPS OF HOW TO USE
+
+  --------------------------------------------*/
+.step {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+  padding: 40px;
+}
+
+.step .number {
+  background: linear-gradient(-45deg, var(--color-primary), var(--color-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.step p:last-child {
+  margin-bottom: 0px;
 }
 
 /*------------------------------------------
@@ -413,6 +523,10 @@ section {
     height: auto;
     padding: 120px 0 60px 0;
     text-align: center;
+  }
+
+  .cover .wave {
+    bottom: -180px;
   }
 
   .cover .animated {

@@ -42,6 +42,18 @@ body.dark .header.header-scrolled .logo span {
   color: var(--dark-color-default);
 }
 
+body.dark .header.header-scrolled .navbar a,
+body.dark .header.header-scrolled .navbar a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body.dark .header.header-scrolled .navbar a:hover,
+body.dark .header.header-scrolled .navbar .active,
+body.dark .header.header-scrolled .navbar .active:focus,
+body.dark .header.header-scrolled .navbar li:hover > a {
+  color: var(--dark-color-default);
+}
+
 body.dark .mobile-nav-toggle {
   color: var(--dark-color-default);
 }
@@ -51,19 +63,7 @@ body.dark .mobile-nav-toggle {
 # NAVBAR
 
 --------------------------------------------------------------*/
-body.dark .navbar a,
-body.dark .navbar a:focus {
-  color: var(--dark-color-default);
-}
-
-body.dark .navbar a:hover,
-body.dark .navbar .active,
-body.dark .navbar .active:focus,
-body.dark .navbar li:hover > a {
-  color: var(--color-secondary);
-}
-
-body.dark .navbar-mobile a:not(.getstarted),
+body.dark .navbar-mobile a,
 body.dark .navbar-mobile a:focus {
   color: var(--color-blue);
 }
@@ -78,12 +78,46 @@ body.dark .navbar-mobile li:hover > a {
 # COVER
 
 --------------------------------------------------------------*/
-body.dark .cover {
-  width: 100%;
-  height: 100vh;
-  background: url(../img/main/cover-dark-bg.png) top center no-repeat;
-  background-size: cover;
+
+body.dark .cover .wave #stroke {
+  fill: var(--dark-color-bg);
 }
+
+/*--------------------------------------------------------------
+
+# ABOUT US
+
+--------------------------------------------------------------*/
+body.dark .about .section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(-45deg, var(--dark-color-third), var(--dark-color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*--------------------------------------------------------------
+
+# STEPS
+
+--------------------------------------------------------------*/
+
+body.dark .step {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+  background: var(--dark-color-primary);
+  padding: 40px;
+}
+
+body.dark .step .number {
+  background: linear-gradient(-45deg, var(--dark-color-primary), var(--dark-color-third));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
 
 /*------------------------------------------
 
@@ -98,21 +132,43 @@ body.dark .cover {
   }
 
   body.dark .cover h1 {
-    font-size: 32px;
+    font-size: 26px !important;
     color: var(--dark-color-default);
   }
 
   body.dark .cover h2 {
-    font-size: 24px;
+    font-size: 20px !important;
     color: var(--dark-color-default);
   }
 }
 
 /** MID SCREEN AND/OR SMALL MONITORS NAVIGATION*/
 @media (max-width: 991px) {
+  body.dark .header.header-scrolled .logo span {
+    color: var(--dark-color-default);
+  }
+
   body.dark .cover {
     height: auto;
     padding: 120px 0 60px 0;
     text-align: center;
+  }
+  body.dark .cover h1 {
+    font-size: 32px !important;
+    color: var(--dark-color-default);
+  }
+
+  body.dark .cover h2 {
+    font-size: 24px !important;
+    color: var(--dark-color-default);
+  }
+  body.dark .navbar-mobile a,
+  body.dark .navbar-mobile a:focus {
+    color: var(--color-blue);
+  }
+  body.dark .navbar-mobile a:hover,
+  body.dark .navbar-mobile .active,
+  body.dark .navbar-mobile li:hover > a {
+    color: var(--dark-color-secondary) !important;
   }
 }
