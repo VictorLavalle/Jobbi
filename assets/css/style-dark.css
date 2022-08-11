@@ -44,7 +44,7 @@ body.dark .header.header-scrolled .logo span {
 
 body.dark .header.header-scrolled .navbar a,
 body.dark .header.header-scrolled .navbar a:focus {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 body.dark .header.header-scrolled .navbar a:hover,
