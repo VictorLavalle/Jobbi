@@ -117,7 +117,7 @@ section {
 
 .header.header-scrolled .navbar a,
 .header.header-scrolled .navbar a:focus {
-  color: var(--color-blue);
+  color: rgba(0, 0, 0, 0.6)
 }
 
 .header.header-scrolled .navbar a:hover,
@@ -492,6 +492,82 @@ section {
 
 .step p:last-child {
   margin-bottom: 0px;
+}
+
+
+/*------------------------------------------
+
+       Blogs
+  --------------------------------------------*/
+.recent-blog-posts .section-heading {
+  font-size: 3rem;
+  font-weight: bolder;
+  background: linear-gradient(-45deg, var(--color-primary), var(--color-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.recent-blog-posts .post-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  transition: 0.3s;
+  height: 100%;
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-blog-posts .post-box .post-img {
+  overflow: hidden;
+  margin: -30px -30px 15px -30px;
+  position: relative;
+}
+
+.recent-blog-posts .post-box .post-img img {
+  transition: 0.5s;
+}
+
+.recent-blog-posts .post-box .post-date {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-default);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.recent-blog-posts .post-box .post-title {
+  font-size: 24px;
+  color: var(--color-secondary);
+  font-weight: 700;
+  margin-bottom: 18px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.recent-blog-posts .post-box .readmore {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1;
+  transition: 0.3s;
+  color: var(--color-primary);
+}
+
+.recent-blog-posts .post-box .readmore i {
+  line-height: 0;
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+.recent-blog-posts .post-box:hover .post-title {
+  color: var(--color-primary);
+}
+
+.recent-blog-posts .post-box:hover .post-img img {
+  transform: rotate(6deg) scale(1.2);
 }
 
 /*------------------------------------------
