@@ -44,7 +44,7 @@ body.dark .header.header-scrolled .logo span {
 
 body.dark .header.header-scrolled .navbar a,
 body.dark .header.header-scrolled .navbar a:focus {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 body.dark .header.header-scrolled .navbar a:hover,
@@ -58,6 +58,10 @@ body.dark .mobile-nav-toggle {
   color: var(--dark-color-default);
 }
 
+body.dark .header.header-scrolled .mobile-nav-toggle {
+  color: var(--dark-color-default);
+}
+
 /*--------------------------------------------------------------
 
 # NAVBAR
@@ -65,7 +69,7 @@ body.dark .mobile-nav-toggle {
 --------------------------------------------------------------*/
 body.dark .navbar-mobile a,
 body.dark .navbar-mobile a:focus {
-  color: var(--color-blue);
+  color: var(--color-blue)!important;
 }
 body.dark .navbar-mobile a:hover,
 body.dark .navbar-mobile .active,
