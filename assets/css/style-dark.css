@@ -51,7 +51,7 @@ body.dark .header.header-scrolled .navbar a:hover,
 body.dark .header.header-scrolled .navbar .active,
 body.dark .header.header-scrolled .navbar .active:focus,
 body.dark .header.header-scrolled .navbar li:hover > a {
-  color: var(--dark-color-default);
+  color: var(--dark-color-secondary);
 }
 
 body.dark .mobile-nav-toggle {
@@ -122,6 +122,22 @@ body.dark .step .number {
   display: block;
 }
 
+/*--------------------------------------------------------------
+
+# RECENT POSTS
+
+--------------------------------------------------------------*/
+body.dark .recent-blog-posts .post-box{
+  background-color: #393e46;
+}
+
+body.dark .recent-blog-posts .post-box .post-date{
+  color: rgba(255,255,255, 0.4);
+}
+
+body.dark .recent-blog-posts .post-box .post-title{
+  color: var(--dark-color-default);
+}
 
 /*------------------------------------------
 
