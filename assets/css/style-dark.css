@@ -69,7 +69,7 @@ body.dark .header.header-scrolled .mobile-nav-toggle {
 --------------------------------------------------------------*/
 body.dark .navbar-mobile a,
 body.dark .navbar-mobile a:focus {
-  color: var(--color-blue)!important;
+  color: var(--color-blue) !important;
 }
 body.dark .navbar-mobile a:hover,
 body.dark .navbar-mobile .active,
@@ -95,7 +95,11 @@ body.dark .cover .wave #stroke {
 body.dark .about .section-heading {
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(-45deg, var(--dark-color-third), var(--dark-color-secondary));
+  background: linear-gradient(
+    -45deg,
+    var(--dark-color-third),
+    var(--dark-color-secondary)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -113,7 +117,11 @@ body.dark .step {
 }
 
 body.dark .step .number {
-  background: linear-gradient(-45deg, var(--dark-color-primary), var(--dark-color-third));
+  background: linear-gradient(
+    -45deg,
+    var(--dark-color-primary),
+    var(--dark-color-third)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -127,18 +135,71 @@ body.dark .step .number {
 # RECENT POSTS
 
 --------------------------------------------------------------*/
-body.dark .recent-blog-posts .post-box{
+body.dark .recent-blog-posts .section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(
+    -45deg,
+    var(--dark-color-third),
+    var(--dark-color-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark .recent-blog-posts .post-box {
   background-color: #393e46;
 }
 
-body.dark .recent-blog-posts .post-box .post-date{
-  color: rgba(255,255,255, 0.4);
+body.dark .recent-blog-posts .post-box .post-date {
+  color: rgba(255, 255, 255, 0.4);
 }
 
-body.dark .recent-blog-posts .post-box .post-title{
+body.dark .recent-blog-posts .post-box .post-title {
   color: var(--dark-color-default);
 }
 
+/*------------------------------------------
+
+            FOOTER
+
+  --------------------------------------------*/
+body.dark .footer {
+  background: var(--dark-color-bg);
+  font-size: 14px;
+}
+
+body.dark .footer .footer-top {
+  background: var(--dark-color-bg);
+  background-size: contain;
+  border-top: 1px solid var(--dark-color-primary);
+  border-bottom: 1px solid var(--dark-color-primary);
+  padding-top: 60px;
+}
+
+body.dark .footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: var(--dark-color-third);
+  font-size: 12px;
+  line-height: 0;
+}
+
+body.dark .footer .footer-top .footer-links ul a {
+  color: var(--dark-color-default);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+body.dark .footer .footer-top .footer-links ul a:hover{
+  color: var(--dark-color-secondary);
+}
+
+body.dark .footer .copyright {
+  float: left;
+  margin-top: 1.5rem;
+  color: rgba(119, 119, 119, 0.6);
+}
 /*------------------------------------------
 
             RESPONSIVENESS
