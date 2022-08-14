@@ -78,9 +78,7 @@ body.dark .navbar-mobile li:hover > a {
 }
 
 /*--------------------------------------------------------------
-
 # COVER
-
 --------------------------------------------------------------*/
 
 body.dark .cover .wave #stroke {
@@ -88,9 +86,7 @@ body.dark .cover .wave #stroke {
 }
 
 /*--------------------------------------------------------------
-
 # ABOUT US
-
 --------------------------------------------------------------*/
 body.dark .about .section-heading {
   font-size: 3rem;
@@ -105,9 +101,24 @@ body.dark .about .section-heading {
 }
 
 /*--------------------------------------------------------------
+# FEATURES
+--------------------------------------------------------------*/
+body.dark .features .section-heading{
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(
+    -45deg,
+    var(--dark-color-third),
+    var(--dark-color-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+
+
+/*--------------------------------------------------------------
 # STEPS
-
 --------------------------------------------------------------*/
 
 body.dark .step {
