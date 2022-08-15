@@ -13,19 +13,27 @@
 }
 
 /*--------------------------------------------------------------
-
-# BODY BACKGROUND
-
+# BODY BACKGROUND AND HEADINGS
 --------------------------------------------------------------*/
 body.dark {
   background-color: var(--dark-color-bg);
   color: var(--dark-color-default);
 }
 
+body.dark .section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(
+    -45deg,
+    var(--dark-color-third),
+    var(--dark-color-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*--------------------------------------------------------------
-
 # HEADER
-
 --------------------------------------------------------------*/
 body.dark .section-header {
   text-align: center;
@@ -85,79 +93,63 @@ body.dark .cover .wave #stroke {
   fill: var(--dark-color-bg);
 }
 
+/*------------------------------------------
+# TEAM
+  --------------------------------------------*/
+body.dark .team .team-item {
+  box-sizing: content-box;
+  padding: 20px;
+  margin: 40px 30px;
+  border-radius: 36px;
+  background: linear-gradient(145deg, #33383f, #3d424b);
+  box-shadow: 5px 5px 10px #2d3137, -5px -5px 10px #454b55;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.3s;
+}
+
+body.dark .team .team-item .team-img {
+  width: 250px;
+  border-radius: 50%;
+  border: 1px solid rgba(84, 201, 255, 0.5);
+  margin: 0 auto;
+}
+
+body.dark .team .team-item p {
+  color: var(--dark-color-default);
+}
+
+body.dark .team .team-item .social a {
+  transition: color 0.3s;
+  color: var(--dark-color-secondary);
+  margin: 15px 12px;
+  display: inline-block;
+  line-height: 0;
+  text-align: center;
+}
+
+body.dark .team .team-item .social a:hover {
+  color: var(--dark-color-third);
+}
+
 /*--------------------------------------------------------------
-# ABOUT US
+# FAQ
 --------------------------------------------------------------*/
-body.dark .about .section-heading {
-  font-size: 3rem;
-  font-weight: 700;
-  background: linear-gradient(
-    -45deg,
-    var(--dark-color-third),
-    var(--dark-color-secondary)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
+body.dark .faq .faq-list li {
+  padding: 20px;
+  background: var(--dark-color-bg);
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 3px 4px 29px -8px rgba(0,0,0,0.53);
+  -webkit-box-shadow: 3px 4px 29px -8px rgba(0,0,0,0.53);
+  -moz-box-shadow: 3px 4px 29px -8px rgba(0,0,0,0.53);
+}
 /*--------------------------------------------------------------
-# FEATURES
---------------------------------------------------------------*/
-body.dark .features .section-heading{
-  font-size: 3rem;
-  font-weight: 700;
-  background: linear-gradient(
-    -45deg,
-    var(--dark-color-third),
-    var(--dark-color-secondary)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-
-/*--------------------------------------------------------------
-# STEPS
---------------------------------------------------------------*/
-
-body.dark .step {
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
-  background: var(--dark-color-primary);
-  padding: 40px;
-}
-
-body.dark .step .number {
-  background: linear-gradient(
-    -45deg,
-    var(--dark-color-primary),
-    var(--dark-color-third)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  margin-bottom: 10px;
-  display: block;
-}
-
-/*--------------------------------------------------------------
-
 # RECENT POSTS
-
 --------------------------------------------------------------*/
-body.dark .recent-blog-posts .section-heading {
-  font-size: 3rem;
-  font-weight: 700;
-  background: linear-gradient(
-    -45deg,
-    var(--dark-color-third),
-    var(--dark-color-secondary)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 body.dark .recent-blog-posts .post-box {
   background-color: #393e46;
 }
@@ -170,10 +162,13 @@ body.dark .recent-blog-posts .post-box .post-title {
   color: var(--dark-color-default);
 }
 
+body.dark .faq .faq-list a.collapsed {
+  color: var(--dark-color-default);
+  transition: 0.3s;
+}
+
 /*------------------------------------------
-
-            FOOTER
-
+# FOOTER
   --------------------------------------------*/
 body.dark .footer {
   background: var(--dark-color-bg);
@@ -202,7 +197,7 @@ body.dark .footer .footer-top .footer-links ul a {
   line-height: 1;
 }
 
-body.dark .footer .footer-top .footer-links ul a:hover{
+body.dark .footer .footer-top .footer-links ul a:hover {
   color: var(--dark-color-secondary);
 }
 

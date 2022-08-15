@@ -42,16 +42,18 @@
     <!-- Bootstrap Library, not recommended to use CDN --->
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <!-- Bootstrap icons Library, not recommended to use CDN --->
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!--Library to create a slider--->
     <link href="assets/css/style.css" rel="stylesheet">
     <!--CSS Main File--->
     <link href="assets/css/style-dark.css" rel="stylesheet">
-    <!--CSS Main File--->
+    <!--CSS Dark Mode File--->
 
 </head>
 
 <body>
 
-<!----------------------------------------------------------------------
+    <!----------------------------------------------------------------------
 # HEADER START
  ---------------------------------------------------------------------->
     <header id="header" class="header fixed-top">
@@ -66,9 +68,9 @@
                     <li><a class="nav-link scrollto active" href="#cover">Inicio</a></li>
                     <li><a class="nav-link scrollto" href="#acerca-de">Acerca de Jobbi</a></li>
                     <li><a class="nav-link scrollto" href="#caracteristicas">Caracter&iacute;sticas</a></li>
-                    <li><a class="nav-link scrollto" href="#Nosotros">Conoce al Equipo</a></li>
+                    <li><a class="nav-link scrollto" href="#equipo">Conoce al Equipo</a></li>
+                    <li><a class="nav-link scrollto" href="#faq">F.A.Q</a></li>
                     <li><a class="nav-link scrollto" href="#blog">Blog</a></li>
-                    <li><a class="nav-link scrollto" href="#">F.A.Q</a></li>
                     <li class="theme">
                         <button class="switch" id="switch">
                             <span><i class="bi bi-sun"></i></span>
@@ -81,13 +83,13 @@
 
         </div>
     </header>
-<!----------------------------------------------------------------------
+    <!----------------------------------------------------------------------
 # HEADER END
 ---------------------------------------------------------------------->
 
 
 
- <!----------------------------------------------------------------------
+    <!----------------------------------------------------------------------
 # COVER START
 ---------------------------------------------------------------------->
     <section id="cover" class="cover d-flex align-items-center">
@@ -128,7 +130,7 @@
         </div>
 
     </section>
-<!----------------------------------------------------------------------
+    <!----------------------------------------------------------------------
 # COVER END
 ---------------------------------------------------------------------->
 
@@ -136,7 +138,8 @@
 
 
     <main id="main">
-<!----------------------------------------------------------------------
+
+        <!----------------------------------------------------------------------
  # ABOUT US START
 ---------------------------------------------------------------------->
         <section id="acerca-de" class="about">
@@ -212,209 +215,391 @@
 
             </div>
         </section>
-<!----------------------------------------------------------------------
+        <!----------------------------------------------------------------------
 # ABOUT US END
 --------------------------------------------------------------------->
 
 
 
-<!----------------------------------------------------------------------
+        <!----------------------------------------------------------------------
 # CALL TO ACTION START
 --------------------------------------------------------------------->
-    <section id="cta" class="cta">
-        <div class="container">
-          <div class="text-center">
-            <h3>¡Se parte de Jobbi!</h3>
-            <p class="fst-italic">
-                Descubre los magn&iacute;ficos beneficios de unirte a Jobbi.
-                 <br>
-            </p>
-            <a class="cta-btn" href="#">Ser Miembro</a>
-            <a class="cta-btn" href="#">Ser Socio</a>
-          </div>
-        </div>
-      </section>
-<!----------------------------------------------------------------------
+        <section id="cta" class="cta">
+            <div class="container">
+                <div class="text-center">
+                    <h3>¡Se parte de Jobbi!</h3>
+                    <p class="fst-italic">
+                        Descubre los magn&iacute;ficos beneficios de unirte a Jobbi.
+                        <br>
+                    </p>
+                    <a class="cta-btn" href="#">Ser Miembro</a>
+                    <a class="cta-btn" href="#">Ser Socio</a>
+                </div>
+            </div>
+        </section>
+        <!----------------------------------------------------------------------
 # CALL TO ACTION END
 --------------------------------------------------------------------->
 
-<!----------------------------------------------------------------------
+
+        <!----------------------------------------------------------------------
 # FEATURES START
 --------------------------------------------------------------------->
- <section id="caracteristicas" class="features">
-    <div class="container" data-aos="fade-up">
+        <section id="caracteristicas" class="features">
+            <div class="container" data-aos="fade-up">
 
-        <div class="row justify-content-center text-center mb-5">
-            <div class="col-md-10" data-aos="fade-up">
-                <h2 class="section-heading">Todos los servicios que necesitas</h2>
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-md-10" data-aos="fade-up">
+                        <h2 class="section-heading">¡Jobbi es tu mejor opci&oacute;n!</h2>
+                    </div>
+                </div>
+
+                <ul class="nav nav-tabs row  g-2 d-flex">
+
+                    <li class="nav-item col-3">
+                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                            <h4>Caracteristica #1</h4>
+                        </a>
+                    </li><!-- End tab nav item -->
+
+                    <li class="nav-item col-3">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                            <h4>Caracteristica #2</h4>
+                        </a><!-- End tab nav item -->
+
+                    <li class="nav-item col-3">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                            <h4>Caracteristica #3</h4>
+                        </a>
+                    </li><!-- End tab nav item -->
+
+                    <li class="nav-item col-3">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+                            <h4>Caracteristica #4</h4>
+                        </a>
+                    </li><!-- End tab nav item -->
+
+                </ul>
+
+                <div class="tab-content">
+
+                    <div class="tab-pane active show" id="tab-1">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                                data-aos="fade-up" data-aos-delay="100">
+                                <h3>Voluptatem dignissimos provident</h3>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore
+                                    magna aliqua.
+                                </p>
+                                <ul>
+                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.</li>
+                                    <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in
+                                        voluptate velit.</li>
+                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
+                                        storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up"
+                                data-aos-delay="200">
+                                <img src="assets/img/illustrations/character/guy-1.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div><!-- End tab content item -->
+
+                    <div class="tab-pane" id="tab-2">
+                        <div class="row">
+                            <div
+                                class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                                <h3>Neque exercitationem debitis</h3>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore
+                                    magna aliqua.
+                                </p>
+                                <ul>
+                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.</li>
+                                    <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in
+                                        voluptate velit.</li>
+                                    <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores
+                                        dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
+                                        storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                <img src="assets/img/illustrations/character/girl-2.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div><!-- End tab content item -->
+
+                    <div class="tab-pane" id="tab-3">
+                        <div class="row">
+                            <div
+                                class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                                <h3>Voluptatibus commodi accusamu</h3>
+                                <ul>
+                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.</li>
+                                    <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in
+                                        voluptate velit.</li>
+                                    <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores
+                                        dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                                </ul>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore
+                                    magna aliqua.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                <img src="assets/img/illustrations/character/guy-2.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div><!-- End tab content item -->
+
+                    <div class="tab-pane" id="tab-4">
+                        <div class="row">
+                            <div
+                                class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                                <h3>Omnis fugiat ea explicabo sunt</h3>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore
+                                    magna aliqua.
+                                </p>
+                                <ul>
+                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.</li>
+                                    <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in
+                                        voluptate velit.</li>
+                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
+                                        storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                <img src="assets/img/illustrations/character/girl-1.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div><!-- End tab content item -->
+
+                </div>
+
             </div>
-        </div>
-
-      <ul class="nav nav-tabs row  g-2 d-flex">
-
-        <li class="nav-item col-3">
-          <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-            <h4>Caracteristica #1</h4>
-          </a>
-        </li><!-- End tab nav item -->
-
-        <li class="nav-item col-3">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-            <h4>Caracteristica #2</h4>
-          </a><!-- End tab nav item -->
-
-        <li class="nav-item col-3">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-            <h4>Caracteristica #3</h4>
-          </a>
-        </li><!-- End tab nav item -->
-
-        <li class="nav-item col-3">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-            <h4>Caracteristica #4</h4>
-          </a>
-        </li><!-- End tab nav item -->
-
-      </ul>
-
-      <div class="tab-content">
-
-        <div class="tab-pane active show" id="tab-1">
-          <div class="row">
-            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-              <h3>Voluptatem dignissimos provident</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/illustrations/character/guy-1.png" alt="" class="img-fluid">
-            </div>
-          </div>
-        </div><!-- End tab content item -->
-
-        <div class="tab-pane" id="tab-2">
-          <div class="row">
-            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-              <h3>Neque exercitationem debitis</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 text-center">
-              <img src="assets/img/illustrations/character/girl-2.png" alt="" class="img-fluid">
-            </div>
-          </div>
-        </div><!-- End tab content item -->
-
-        <div class="tab-pane" id="tab-3">
-          <div class="row">
-            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-              <h3>Voluptatibus commodi accusamu</h3>
-              <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-              </ul>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 text-center">
-              <img src="assets/img/illustrations/character/guy-2.png" alt="" class="img-fluid">
-            </div>
-          </div>
-        </div><!-- End tab content item -->
-
-        <div class="tab-pane" id="tab-4">
-          <div class="row">
-            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-              <h3>Omnis fugiat ea explicabo sunt</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 text-center">
-              <img src="assets/img/illustrations/character/girl-1.png" alt="" class="img-fluid">
-            </div>
-          </div>
-        </div><!-- End tab content item -->
-
-      </div>
-
-    </div>
-  </section>
-<!----------------------------------------------------------------------
+        </section>
+        <!----------------------------------------------------------------------
 # FEATURES END
 --------------------------------------------------------------------->
 
 
 
-<!----------------------------------------------------------------------
-# STEPS START
+        <!----------------------------------------------------------------------
+# TEAM START
  --------------------------------------------------------------------->
-        <section id="instrucciones" class="steps">
+        <section id="equipo" class="team">
+            <div class="container" data-aos="fade-up">
 
-            <div class="container">
-                <div class="row justify-content-center text-center mb-5" data-aos="fade">
-                    <div class="col-md-6 mb-5">
-                        <img src="assets/img/illustrations/object/object-2.png" alt="Image" class="img-fluid">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-md-10" data-aos="fade-up">
+                        <h2 class="section-heading">Conoce al equipo</h2>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="step">
-                            <span class="number">01</span>
-                            <h3>Registrate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
-                        </div>
+                <div class="team-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="team-item">
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/team/team-member.png" class="team-img" alt="">
+                                    <h3>Jobbi 1</h3>
+                                    <h4>CEO</h4>
+                                </div>
+                                <p>
+                                    Aquí puede ir alguna frase sobre el proyecto
+                                </p>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End team item -->
+
+                        <div class="swiper-slide">
+                            <div class="team-item">
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/team/team-member.png" class="team-img" alt="">
+                                    <h3>Jobbi 2</h3>
+                                    <h4>CTO</h4>
+                                </div>
+                                <p>
+                                    Aquí puede ir alguna frase sobre el proyecto
+                                </p>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End team item -->
+
+                        <div class="swiper-slide">
+                            <div class="team-item">
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/team/team-member.png" class="team-img" alt="">
+                                    <h3>Jobbi 3</h3>
+                                    <h4>Project Manager</h4>
+                                </div>
+                                <p>
+                                    Aquí puede ir alguna frase sobre el proyecto
+                                </p>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End team item -->
+
+                        <div class="swiper-slide">
+                            <div class="team-item">
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/team/team-member.png" class="team-img" alt="">
+                                    <h3>Jobbi 4</h3>
+                                    <h4>Full Stack Dev</h4>
+                                </div>
+                                <p>
+                                    Aquí puede ir alguna frase sobre el proyecto
+                                </p>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+
+                            </div>
+                        </div><!-- End team item -->
+
                     </div>
-                    <div class="col-md-4">
-                        <div class="step">
-                            <span class="number">02</span>
-                            <h3>Crea tu perfil</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="step">
-                            <span class="number">03</span>
-                            <h3>¡Explora!</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
-                        </div>
-                    </div>
+
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
 
+            </div>
         </section>
-<!----------------------------------------------------------------------
-# STEPS END
---------------------------------------------------------------------->
+        <!--------------------------ial--------------------------------------------
+# TEAM END
+ --------------------------------------------------------------------->
 
 
 
 <!----------------------------------------------------------------------
+# FAQ END
+ --------------------------------------------------------------------->
+        <section id="faq" class="faq">
+            <div class="container" data-aos="fade-up">
+
+
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-md-10" data-aos="fade-up">
+                        <h2 class="section-heading">Preguntas Frecuentes</h2>
+                    </div>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                                data-bs-target="#faq-list-1">Pregunta 1? <i
+                                    class="bi bi-chevron-down icon-show"></i><i
+                                    class="bi bi-chevron-up icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                                <p>
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-2" class="collapsed">Pregunta 2?  <i class="bi bi-chevron-down icon-show"></i><i
+                                    class="bi bi-chevron-up icon-close"></i></a>
+                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
+                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+                                    cursus turpis massa tincidunt dui.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-3" class="collapsed">Pregunta 3? <i class="bi bi-chevron-down icon-show"></i><i
+                                    class="bi bi-chevron-up icon-close"></i></a>
+                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
+                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
+                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-4" class="collapsed">Pregunta 4?  <i class="bi bi-chevron-down icon-show"></i><i
+                                    class="bi bi-chevron-up icon-close"></i></a>
+                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
+                                    est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
+                                    suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="500">
+                            <i class="bi bi-question-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-5" class="collapsed">Pregunta 5? <i
+                                    class="bi bi-chevron-down icon-show"></i><i
+                                    class="bi bi-chevron-up icon-close"></i></a>
+                            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
+                                    integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
+                                    eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!----------------------------------------------------------------------
+# FAQ END
+ --------------------------------------------------------------------->
+
+
+        <!----------------------------------------------------------------------
 # RECENT POSTS START
 --------------------------------------------------------------------->
         <section id="blog" class="recent-blog-posts">
@@ -468,7 +653,7 @@
         </section>
 
     </main>
-<!----------------------------------------------------------------------
+    <!----------------------------------------------------------------------
 # FOOTER START
 --------------------------------------------------------------------->
     <footer id="footer" class="footer">
@@ -540,6 +725,7 @@
 
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
