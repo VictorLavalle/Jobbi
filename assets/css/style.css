@@ -1112,6 +1112,10 @@ section {
     width: 80%;
   }
 
+  .recent-blog-posts .col-lg-4{
+    margin: 2rem 0;
+}
+
   .footer .footer-top {
     background-position: center bottom;
   }
