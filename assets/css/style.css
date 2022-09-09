@@ -345,7 +345,7 @@ section {
 }
 
 .cover .cover-title {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .cover h1 {
@@ -994,6 +994,13 @@ section {
 .footer .legal ul.footer-terms li a:hover {
   color: rgba(2, 183, 255, 0.493);
 }
+
+/*------------------------------------------
+            POLICIES
+  --------------------------------------------*/
+  .policies{
+    text-align: justify;
+  }
 /*------------------------------------------
             RESPONSIVENESS
   --------------------------------------------*/
