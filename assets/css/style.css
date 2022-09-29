@@ -1018,7 +1018,8 @@ section {
   }
 
   .about .content img {
-    height: 100%;
+    height: fit-content;
+    width: fit-content;
   }
 
   .about .content p:last-child {
