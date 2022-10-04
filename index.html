@@ -145,7 +145,7 @@
 
                 <div class="row content">
                     <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
-                        <img src="assets/img/illustrations/object/object-2.webp" class="img-fluid" alt="">
+                        <img src="assets/img/illustrations/object/object-2.webp" class="img-fluid" alt="illustration" height="300px" width="400px">
                     </div>
                     <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
                         <h3>Encontrar plomeros, albañiles, electricistas, mecánicos y más nunca fue tan f&aacute;cil.
@@ -189,7 +189,7 @@
 
                 <div class="row content">
                     <div class="col-md-5" data-aos="fade-right">
-                        <img src="assets/img/illustrations/object/object-6.webp" class="img-fluid" alt="">
+                        <img src="assets/img/illustrations/object/object-6.webp" class="img-fluid" alt="" height="500px" width="380px">
                     </div>
                     <div class="col-md-7 pt-5" data-aos="fade-left">
                         <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
@@ -394,6 +394,7 @@
 
  <!----------------------------------------------------------------------
 # RECENT POSTS START
+Made with vue so you can consumen an API or write the blogs info in the js file
 --------------------------------------------------------------------->
         <section id="blog" class="recent-blog-posts">
 
@@ -405,42 +406,19 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div id="blogs-section" class="row">
 
-                    <div class="col-lg-4">
+                    <div v-if="blogs.length" v-for="blog in blogs" class="col-lg-4">
                         <div class="post-box">
                             <div class="post-img">
-                                <img src="assets/img/blogs/blog-dummy.webp" class="img-fluid" alt="Blog img">
+                                <img :src="blog.image" class="img-fluid" alt="Blog cover">
                             </div>
-                            <span class="post-date">D&iacute;a, num Mes</span>
-                            <h3 class="post-title">T&iacute;tulo</h3>
+                            <span class="post-date">{{blog.date}}</span>
+                            <h3 class="post-title">{{blog.title}}</h3>
                             <a href="#" class="readmore stretched-link mt-auto"><span>Leer M&aacute;s</span><i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
-
-                    <div class="col-lg-4">
-                        <div class="post-box">
-                            <div class="post-img"><img src="assets/img/blogs/blog-dummy.webp" class="img-fluid"
-                                    alt="Blog img"></div>
-                            <span class="post-date">D&iacute;a, num Mes</span>
-                            <h3 class="post-title">T&iacute;tulo</h3>
-                            <a href="#" class="readmore stretched-link mt-auto"><span>Leer M&aacute;s</span><i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="post-box">
-                            <div class="post-img"><img src="assets/img/blogs/blog-dummy.webp" class="img-fluid"
-                                    alt="Blog img"></div>
-                            <span class="post-date">D&iacute;a, num Mes</span>
-                            <h3 class="post-title">T&iacute;tulo</h3>
-                            <a href="#" class="readmore stretched-link mt-auto"><span>Leer M&aacute;s</span><i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -517,6 +495,7 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

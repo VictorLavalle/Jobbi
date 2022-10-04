@@ -241,4 +241,36 @@ const galleryLightbox = GLightbox({
     document.body.classList.remove("dark");
     btnSwitch.classList.remove("active");
   }
+
+  const { createApp, ref } = Vue;
+
+const blogs = ref([
+  {
+    date: "Tue, September 15",
+    title:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.",
+    image: "assets/img/blogs/blog-dummy.webp",
+  },
+  {
+    date: "Tue, September 17",
+    title: "Vivamus ut magna sed diam tempor varius. Vestibulum eget massa.",
+    image: "assets/img/blogs/blog-dummy.webp",
+  },
+  {
+    date: "Tue, September 19",
+    title: "In molestie justo elit, eget tincidunt ante fermentum eget. Fusce.",
+    image: "assets/img/blogs/blog-dummy.webp",
+  },
+]);
+
+createApp({
+  data() {
+    return {
+      blogs,
+    };
+  },
+}).mount("#blogs-section");
+
+
+
 })();
