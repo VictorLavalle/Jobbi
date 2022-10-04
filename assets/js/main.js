@@ -189,9 +189,11 @@
     }
   });
 
-  /**
-   * Initiate gallery lightbox 
-   */
+    /**---------------------------------------------------------------
+    *
+    * Initiate gallery lightbox
+    *
+    ------------------------------------------------------------------ */
   const galleryLightbox = GLightbox({
     selector: '.gallery-lightbox'
   });
@@ -242,6 +244,12 @@
     btnSwitch.classList.remove("active");
   }
 
+  /**---------------------------------------------------------------
+    *
+    * Vue JS Init to show the recent posts for the blogs section
+    *  and make it dynamic or implement an API to get the data
+    *
+    ------------------------------------------------------------------ */
   const {
     createApp,
     ref
