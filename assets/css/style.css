@@ -496,20 +496,6 @@ section {
   font-size: 26px;
 }
 
-.about .content .image-div {
-  width: 31%;
-  height: auto;
-}
-
-/* .about .content img {
-  width: 100%;
-  height: 90%;
-} */
-
-.about .content #mid {
-  margin-left: 7rem !important;
-}
-
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -1016,19 +1002,8 @@ section {
     margin-top: -2rem;
   }
 
-/*   .about .content img {
-    height: fit-content;
-    width: fit-content;
-  } */
-
   .about .content p:last-child {
     margin-bottom: 5rem;
-  }
-
-  .about .content #mid {
-    margin-top: 5rem;
-    margin-left: 1rem !important;
-    height: 70%;
   }
 
   .cta {
