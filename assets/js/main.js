@@ -155,46 +155,46 @@
     * Gallery Slider
     *
     ------------------------------------------------------------------ */
- new Swiper('.gallery-slider', {
-  speed: 400,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false
-  },
-  slidesPerView: 'auto',
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 30
+  new Swiper('.gallery-slider', {
+    speed: 400,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
     },
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 30
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
     },
-    992: {
-      slidesPerView: 5,
-      spaceBetween: 30
-    },
-    1200: {
-      slidesPerView: 7,
-      spaceBetween: 30
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 30
+      },
+      1200: {
+        slidesPerView: 7,
+        spaceBetween: 30
+      }
     }
-  }
-});
+  });
 
-/**
- * Initiate gallery lightbox 
- */
-const galleryLightbox = GLightbox({
-  selector: '.gallery-lightbox'
-});
+  /**
+   * Initiate gallery lightbox 
+   */
+  const galleryLightbox = GLightbox({
+    selector: '.gallery-lightbox'
+  });
 
 
   /**---------------------------------------------------------------
@@ -242,34 +242,35 @@ const galleryLightbox = GLightbox({
     btnSwitch.classList.remove("active");
   }
 
-  const { createApp, ref } = Vue;
+  const {
+    createApp,
+    ref
+  } = Vue;
 
-const blogs = ref([
-  {
-    date: "Tue, September 15",
-    title:
-      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.",
-    image: "assets/img/blogs/blog-dummy.webp",
-  },
-  {
-    date: "Tue, September 17",
-    title: "Vivamus ut magna sed diam tempor varius. Vestibulum eget massa.",
-    image: "assets/img/blogs/blog-dummy.webp",
-  },
-  {
-    date: "Tue, September 19",
-    title: "In molestie justo elit, eget tincidunt ante fermentum eget. Fusce.",
-    image: "assets/img/blogs/blog-dummy.webp",
-  },
-]);
+  const blogs = ref([{
+      date: "Tue, September 15",
+      title: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.",
+      image: "assets/img/blogs/blog-dummy.webp",
+    },
+    {
+      date: "Tue, September 17",
+      title: "Vivamus ut magna sed diam tempor varius. Vestibulum eget massa.",
+      image: "assets/img/blogs/blog-dummy.webp",
+    },
+    {
+      date: "Tue, September 19",
+      title: "In molestie justo elit, eget tincidunt ante fermentum eget. Fusce.",
+      image: "assets/img/blogs/blog-dummy.webp",
+    },
+  ]);
 
-createApp({
-  data() {
-    return {
-      blogs,
-    };
-  },
-}).mount("#blogs-section");
+  createApp({
+    data() {
+      return {
+        blogs,
+      };
+    },
+  }).mount("#blogs-section");
 
 
 
