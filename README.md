@@ -4,14 +4,6 @@ Landing Page for the app Jobbi
 
 **Data:**
 
-- Servidor: ftp.jobbi.mx
-- área de trabajo: [https://landingpage.jobbi.mx](https://landingpage.jobbi.mx/)
-- Nombre de usuario: u833903055.victorlavalle 
-- Contraseña: %XNv3023c%Hz
-- Puerto: 21
-
-
-
 **Pestañas:** 
 * Inicio:<br>
 CTA para registrarte como miembro <br>
