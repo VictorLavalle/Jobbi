@@ -149,55 +149,79 @@
     }
   });
 
-
   /**---------------------------------------------------------------
     *
     * Gallery Slider
     *
     ------------------------------------------------------------------ */
-  new Swiper('.gallery-slider', {
+  new Swiper(".gallery-slider", {
     speed: 400,
     loop: true,
     centeredSlides: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
     },
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       640: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       992: {
         slidesPerView: 5,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       1200: {
         slidesPerView: 7,
-        spaceBetween: 30
-      }
-    }
+        spaceBetween: 30,
+      },
+    },
   });
 
-    /**---------------------------------------------------------------
+  /**---------------------------------------------------------------
+    *
+    * Blogs slider
+    *
+    ------------------------------------------------------------------ */
+
+  var swiper = new Swiper(".sliderFeaturedPosts", {
+    spaceBetween: 0,
+    speed: 500,
+    centeredSlides: true,
+    loop: true,
+    slideToClickedSlide: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".custom-swiper-button-next",
+      prevEl: ".custom-swiper-button-prev",
+    },
+  });
+
+  /**---------------------------------------------------------------
     *
     * Initiate gallery lightbox
     *
     ------------------------------------------------------------------ */
   const galleryLightbox = GLightbox({
-    selector: '.gallery-lightbox'
+    selector: ".gallery-lightbox",
   });
-
 
   /**---------------------------------------------------------------
     *
@@ -243,5 +267,4 @@
     document.body.classList.remove("dark");
     btnSwitch.classList.remove("active");
   }
-
 })();
