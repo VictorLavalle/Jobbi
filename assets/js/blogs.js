@@ -8,24 +8,12 @@ const { createApp, ref } = Vue;
 
 const blogs = ref([
   {
-    date: "Tue, September 15",
+    date: "Miércoles, 09 de Noviembre",
     title:
-      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.",
-    image: "assets/img/blogs/blog-dummy.webp",
+      "Jobbi se presentará en el evento i6 el 09 y 10 de Noviembre.",
+    image: "assets/img/blogs/i6_jobbi.png",
     link: "#",
-  },
-  {
-    date: "Tue, September 17",
-    title: "Vivamus ut magna sed diam tempor varius. Vestibulum eget massa.",
-    image: "assets/img/blogs/blog-dummy.webp",
-    link: "#",
-  },
-  {
-    date: "Tue, September 19",
-    title: "In molestie justo elit, eget tincidunt ante fermentum eget. Fusce.",
-    image: "assets/img/blogs/blog-dummy.webp",
-    link: "#",
-  },
+  }
 ]);
 
 createApp({

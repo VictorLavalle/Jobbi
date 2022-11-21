@@ -43,6 +43,8 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <!--CSS Dark Mode File--->
     <link href="assets/css/style-dark.css" rel="stylesheet">
+    <!--CSS For Subscription Notification --->
+    <link href="assets/css/notification.css" rel="stylesheet">
 
 </head>
 
@@ -54,7 +56,7 @@
     <header id="header" class="header fixed-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="#" class="logo d-flex align-items-center">
                 <span>Jobbi</span>
             </a>
 
@@ -64,7 +66,6 @@
                     <li><a class="nav-link scrollto" href="#acerca-de">Acerca de Jobbi</a></li>
                     <li><a class="nav-link scrollto" href="#caracteristicas">Caracter&iacute;sticas</a></li>
                     <li><a class="nav-link scrollto" href="#blog">Blog</a></li>
-                    <li><a class="nav-link scrollto" href="#">Cont&aacute;ctanos</a></li>
                     <li class="theme">
                         <button class="switch" id="switch">
                             <span><i class="bi bi-sun"></i></span>
@@ -148,16 +149,21 @@
                         <h3>Encontrar plomeros, albañiles, electricistas, mecánicos y más nunca fue tan f&aacute;cil.
                         </h3>
                         <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
+                            Ahora con Jobbi, te damos la facilidad de encontrar los servicios que necesitas de manera:
                         </p>
                         <ul>
-                            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <li>
+                                <i class="bi bi-check"></i>
+                                Rápida, ya que solo llenas un pequeño formulario.
                             </li>
-                            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                            <li>
+                                <i class="bi bi-check"></i>
+                                Fácil, pues solo tienes que elegir al que más te convenga para el servicio.
                             </li>
-                            <li><i class="bi bi-check"></i> Ullam est qui quos consequatur eos accusamus.</li>
+                            <li>
+                                <i class="bi bi-check"></i>
+                                Seguro, porque nosotros no liberamos tu dinero hasta que se finalice el trabajo.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -170,16 +176,16 @@
                         <h3> Cambiamos la forma de hacer networking en l&iacute;nea a trav&eacute;s de una plataforma
                         </h3>
                         <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
+                            Dejamos atr&aacute;s la sección amarilla, pusimos las necesidades de las personas como
+                            nuestra prioridad.
                         </p>
                         <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
+                            A comparaci&oacute;n de muchas otras plataformas, nosotros nos enfocamos en ayudar a las
+                            personas y
+                            en cuidarlas durante su proceso, sin importar que sea socio o miembro, todos son igual de
+                            importantes, por esa raz&oacute;n esforzamos d&iacute;a con d&iacute;a para que la
+                            plataforma sea la m&aacute;s adecuada
+                            a sus necesidades.
                         </p>
                     </div>
                 </div>
@@ -189,15 +195,16 @@
                         <img src="assets/img/illustrations/object/object-4.webp" class="img-fluid" alt="">
                     </div>
                     <div class="col-md-8 pt-5" data-aos="fade-left">
-                        <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-                        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe
-                            odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+                        <h3>¡Nuestra plataforma se adecua a tus necesidades!</h3>
+                        <p class="fst-italic">
+                            Olv&iacute;date de depender de alguien.
+                        </p>
                         <ul>
-                            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <li><i class="bi bi-check"></i> Organiza tus tiempos.
                             </li>
-                            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                            <li><i class="bi bi-check"></i> Crea cotizaciones
                             </li>
-                            <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.
+                            <li><i class="bi bi-check"></i> Ponle una fecha a tu trabajo.
                             </li>
                         </ul>
                     </div>
@@ -221,8 +228,7 @@
                         Descubre los magn&iacute;ficos beneficios de unirte a Jobbi.
                         <br>
                     </p>
-                    <a class="cta-btn" href="#">Ser Miembro</a>
-                    <a class="cta-btn" href="#">Ser Socio</a>
+                    <a class="cta-btn activar-noti" href="#">Activar las notificaciones</a>
                 </div>
             </div>
         </section>
@@ -251,17 +257,14 @@
                         <div class="swiper-slide"><a href="assets/img/gallery/gallery-1.webp" class="gallery-lightbox"
                                 data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-1.webp"
                                     class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="assets/img/gallery/gallery-1.webp" class="gallery-lightbox"
-                                data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-1.webp"
+                        <div class="swiper-slide"><a href="assets/img/gallery/gallery-2.webp" class="gallery-lightbox"
+                                data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-2.webp"
                                     class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="assets/img/gallery/gallery-1.webp" class="gallery-lightbox"
-                                data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-1.webp"
+                        <div class="swiper-slide"><a href="assets/img/gallery/gallery-3.webp" class="gallery-lightbox"
+                                data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-3.webp"
                                     class="img-fluid" alt=""></a></div>
                         <div class="swiper-slide"><a href="assets/img/gallery/gallery-4.webp" class="gallery-lightbox"
-                                data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-1.webp"
-                                    class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="assets/img/gallery/gallery-5.webp" class="gallery-lightbox"
-                                data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-1.webp"
+                                data-gall="gallery-carousel"><img src="assets/img/gallery/gallery-4.webp"
                                     class="img-fluid" alt=""></a></div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -287,16 +290,16 @@
                 <ul class="nav nav-tabs row  g-2 d-flex">
                     <li class="nav-item col-3">
                         <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                            <h4>Caracteristica #1</h4>
+                            <h4>&Aacute;gil</h4>
                         </a>
                     </li>
                     <li class="nav-item col-3">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                            <h4>Caracteristica #2</h4>
+                            <h4>Seguro</h4>
                         </a>
                     <li class="nav-item col-3">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                            <h4>Caracteristica #3</h4>
+                            <h4>Amigable</h4>
                         </a>
                     </li>
                 </ul>
@@ -307,25 +310,29 @@
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
                                 data-aos="fade-up" data-aos-delay="100">
-                                <h3>Voluptatem dignissimos provident</h3>
+                                <h3>Lo hemos dicho antes</h3>
                                 <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
-                                    magna aliqua.
+                                    Siempre tratamos de escuchar a quienes nos rodean y por esa razón siempre nos vamos
+                                    actualizando.
                                 </p>
                                 <ul>
-                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.</li>
-                                    <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in
-                                        voluptate velit.</li>
-                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
-                                        storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                    <li>
+                                        <i class="bi bi-check2-all"></i>
+                                        Complimos con la rapidez de crear una solicitud sencilla.
+                                    </li>
+                                    <li><i class="bi bi-check2-all"></i>
+                                        D&aacute;ndote la facilidad de encontrar a los socios que necesitas.
+                                    </li>
+                                    <li><i class="bi bi-check2-all"></i>
+                                        Y sobre todo, siempre adapt&aacute;ndonos a tus necesidades y requerimientos,
+                                        proporcion&aacute;ndote siempre lo mejor de las experiencias.
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up"
                                 data-aos-delay="200">
-                                <img src="assets/img/illustrations/character/guy-1.webp" alt="" class="img-fluid">
+                                <img src="assets/img/illustrations/character/guy-1.webp" alt="Persona de Agil"
+                                    class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -334,26 +341,33 @@
                         <div class="row">
                             <div
                                 class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                                <h3>Neque exercitationem debitis</h3>
+                                <h3>Uno de nuestros principales objetivos</h3>
                                 <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
-                                    magna aliqua.
+                                    No queremos que pases por lo que nosotros pasamos, es totalmente desagradable que te
+                                    roben y que no vea nadie quien te respalde
                                 </p>
                                 <ul>
-                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.</li>
-                                    <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in
-                                        voluptate velit.</li>
-                                    <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores
-                                        dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
-                                        storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                    <li>
+                                        <i class="bi bi-check2-all"></i>
+                                        Por esa raz&oacute;n validamos de pies a cabeza a nuestros socios.
+                                    </li>
+                                    <li><i class="bi bi-check2-all"></i>
+                                        Cada servicio es supervisado por nuestro equipo Staff, no dejaremos de cuidar a
+                                        nuestros usuarios.
+                                    </li>
+                                    <li><i class="bi bi-check2-all"></i>
+                                        T&uacute; dinero est&aacute; resguardado con nosotros, liberaremos el pago hasta
+                                        que est&eacute;s satisfecho con el servicio.
+                                    </li>
+                                    <li><i class="bi bi-check2-all"></i>
+                                        Siempre tendr&aacute;s a tu disposici&oacute;n un bot&oacute;n de
+                                        ayuda por si as&iacute; lo necesitas.
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/illustrations/character/girl-2.webp" alt="" class="img-fluid">
+                                <img src="assets/img/illustrations/character/girl-2.webp" alt="Personaje de Seguridad"
+                                    class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -362,23 +376,26 @@
                         <div class="row">
                             <div
                                 class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                                <h3>Voluptatibus commodi accusamu</h3>
+                                <h3>No solo nos preocupa nuestros miembros y socios, igual el mañana de la humanidad
+                                </h3>
                                 <ul>
-                                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.</li>
-                                    <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in
-                                        voluptate velit.</li>
-                                    <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores
-                                        dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                                    <li><i class="bi bi-check2-all"></i>
+                                        Por cada 100 servicios plantaremos 10 &aacute;rboles.
+                                    </li>
+                                    <li><i class="bi bi-check2-all"></i>
+                                        Nuestros servicios son alimentados por energias renovables.
+                                    </li>
+                                    <li><i class="bi bi-check2-all"></i>
+                                        Reciclamos y reutilizamos, siempre a favor de un mundo verde.</li>
                                 </ul>
                                 <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
-                                    magna aliqua.
+                                    Esto no es trabajo de uno, es trabajo de todos ayudar a cuidar el planeta y lo haces
+                                    cada que usas Jobbi para cualquiera de tus necesidades, gracias. 💚
                                 </p>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/illustrations/character/guy-2.webp" alt="" class="img-fluid">
+                                <img src="assets/img/illustrations/character/guy-2.webp" alt="Personaje Amigable"
+                                    class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -491,6 +508,26 @@
      # END FOOTER
      --------------------------------------------------------------------->
 
+    <!----------------------------------------------------------------------
+        # SUBSCRIBE/REGISTER NOTIFICATION
+    --------------------------------------------------------------------->
+
+    <div class="jobbi-notification-body">
+        <div class="jobbi-notification">
+            <span class="close-notification"> <i class="bi bi-x-circle"></i></span>
+            <h4>Activa las notificaciones</h4>
+            <form>
+                <label for="email">Correo</label>
+                <input type="email" name="email" id="email_jobbi" placeholder="tucorreo@example.com">
+                <button id="send">Activar</button>
+            </form>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------
+        # END SUBSCRIBE/REGISTER NOTIFICATION
+    --------------------------------------------------------------------->
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -498,6 +535,7 @@
     <script src="https://unpkg.com/vue/dist/vue.global.prod.js"></script>
     <script src="assets/js/blogs.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/notification.js"></script>
 
 </body>
 
