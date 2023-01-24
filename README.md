@@ -1,35 +1,19 @@
 # Jobbi
-Landing Page for the app Jobbi
 
+Welcome to Jobbi, the platform that connects you with skilled professionals for all your job needs. Our goal is to make it easy for you to find and hire the perfect person for the job, whether you need a gardener, builder, guard, painter, or any other skilled professional.
 
-**Data:**
+## Features
+- Search for professionals in your desired field and location
+- Browse through profiles and reviews to find the right person for the job
+- Easily communicate and schedule appointments with professionals
+- Payment processing and job completion tracking built-in
+- Leave reviews to help others find the right professional for their job
 
-**Pestañas:** 
-* Inicio:<br>
-CTA para registrarte como miembro <br>
-CTA para registrarte como socio
-* About Jobbi
-* Meet the team
-* Blog
-* Footer
+## Getting Started
+1. Register as a client
+2. Search for professionals in your desired field and location
+3. Browse through profiles, read reviews and check availability
+4. Contact the professional to schedule an appointment and get a quote
+5. Complete the job and leave a review to help others find the right professional for their job
 
-
-
-**Paleta de colores** 
-* Blue: #02a2bb
-* #dffbff
-* #fff
-* botones: #00a7c0
-
-**Fonts:**
-* Principal: Rubiks
-* Secundaria: MPLUSRounded1c-regular
-
-**¿Qué es Jobbi?**
-
-* Enfocarse en una empresa sustentable
-
-* Por cada 100 se planta un arbolito
-
-* "Un día tuve la mala experiencia de contratar los servicios de mudanza y fui estafado, con esto nació la udea de crear una plataforma tecnológica en donde la gente pueda contratar desde los servicios de una modista hasta los servicios de un dentista de manera segura y confiable, tomando en consideración el presupuesto de los usuarios. Además de brindarles la oportunidad de prestar sus servicios, también le brindamos sus herramientas de trabajo a un bajo costo."
-
+We know finding the right professional for the job can be a hassle, that's why we created Jobbi. With our platform, it's easy to find and hire the perfect person for the job. Give us a try today and see the difference for yourself.
